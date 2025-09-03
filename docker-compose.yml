@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./out:/app/out
+      - ./session:/app/session  # <- persist session
